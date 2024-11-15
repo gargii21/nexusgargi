@@ -1,9 +1,12 @@
 
-import Link from "next/link";
+'use client'
+import Link  from "next/link";
 import MaxWidthWrapper from "./sections/MaxWidthWrapper";
 import {ArrowRight} from "lucide-react"
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import { BrowserRouter as Router, Route,  Routes, BrowserRouter } from "react-router-dom";
+import Home2 from "./dashboard/page";
 
 export default function Home() {
   return(
@@ -31,6 +34,10 @@ export default function Home() {
       })} href="/dashboard" target="_blank">
         Get Started <ArrowRight className="ml-2 w-5 h-5"/>
       </Link>
+
+      
+
+     
 
 
       
@@ -151,6 +158,15 @@ export default function Home() {
               clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }} className="fixed bottom-0 left-0 aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-bl from-[#ff80b5] to-[#ebf24d] opacity-40 sm:w-[72.1875rem]"/>
             </div>*/}
+
+<div className="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" className="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGWhVHfWNY/MhpIuzZpq1QF_bDPC9pL_A/view?embed"  allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGWhVHfWNY&#x2F;MhpIuzZpq1QF_bDPC9pL_A&#x2F;view?utm_content=DAGWhVHfWNY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Gargi
             
 
 
