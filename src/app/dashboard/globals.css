@@ -1,0 +1,316 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color1: #502907;
+  --color2: #F9D2AF;
+  --color3: #a358d3;
+--color4: rgba(65, 138, 195, 0);
+}
+*{
+  background-color: var(--color3);
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, 100px); /* 2 rows, each 100px tall */
+  gap: 10px; /* Space between grid items */
+  padding: 10px;
+}
+
+.grid-item {
+  /* Green background */
+  color: black; /* White text */
+  text-align: center; /* Center text */
+  padding: 20px; /* Some padding */
+ 
+  border-color: black;
+  border-width: 1px; /* Rounded corners */
+}
+.dialog-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* adjust the z-index to a higher value if needed */
+  background-color: var(--color1);
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 50%;
+}
+.dialog-box2 {
+  position: absolute;
+  top:75%;
+  left:75%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* adjust the z-index to a higher value if needed */
+  background-color: var(--color1);
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 45%;
+}
+.elem {
+ 
+  z-index: 1000; /* adjust the z-index to a higher value if needed */
+  background-color: var(--color1);
+  color: var(--color2);
+  font-size: 17px;
+  font-weight: 500;
+  
+  
+}
+.eleme {
+ 
+  z-index: 1000; /* adjust the z-index to a higher value if needed */
+  background-color: var(--color2);
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid var(--color1);
+  border-radius: 10px;
+  
+  
+  text-align: top;
+  color: var(--color1);
+  font-size: 20px;
+  font-weight: 450;
+  
+}
+.stickynote {
+ 
+  z-index: 1001; /* adjust the z-index to a higher value if needed */
+  background-color: var(--color1);
+ 
+  height: 60%;
+  
+ 
+  
+}
+
+#close{
+  color: var(--color2);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+#addtodo{
+  font-size: 25px;
+}
+
+#type{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+
+*{
+  background-color: var(--color2);
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  background-color: var(--color1);
+  height: 50px;
+  align-items: center;
+  
+}
+
+.nav{
+  margin-left: 30px;
+  
+  height: 40px;
+  color: #F9D2AF;
+  font-size: 15px;
+  font-weight: 300;
+
+
+  
+
+}
+
+.nav:hover{
+
+  text-decoration: underline;
+  /* border: 2px solid #F9D2AF;  
+  border-radius: 5px;
+  padding: 5px; */
+}
+
+
+#logout{
+  margin-left: 1130px;
+  background-color: var(--color1);
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid var(--color2);
+
+}
+
+#logout:hover{
+  background-color: var(--color2);
+  color: var(--color1);
+  font-weight: 500;
+}
+
+
+
+a{
+  background-color: var(--color1);
+}
+
+
+
+/* table */
+
+.heading{  /*table of headings of columns*/
+  display: flex;
+  justify-content: center;
+}
+
+.title1{  /*indivisual titles boxes*/
+  display: flex;
+  justify-content: center;
+
+}
+
+.title1 td{  /*data in all titles*/
+  height: 45px;
+  width: 150px;
+  background-color: var(--color1);
+  margin: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color2);
+  font-size: 20px;
+}
+
+
+#add{/*+sign to add task*/
+  font-size: 25px;
+  padding-bottom: 4px;
+  background-color: var(--color1);
+  
+}
+
+.content{  /*main data table*/
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+
+}
+
+.title2{  /*row name*/    
+  min-height: 330px;
+  width: 1400px; 
+  background-color: var(--color3);
+  border-radius: 20px;
+  display: flex;   
+  
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+
+.title2 td{  /* data in columns*/
+  height: 100px;
+  width: 150px;
+  margin: 50px;
+  background-color: var(--color3);
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+ 
+  
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  
+ 
+
+}
+
+
+li{  /*list of postits*/ 
+  
+  background-color: var(--color3);
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+#bluepostit{
+  height: 100px;
+  width: 105px;  
+  
+  background-color: var(--color4);
+  background-position: center;  
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  
+  padding-left: 8px;
+  padding-right: 5px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif ;
+  
+  
+  
+}
+
+#bluepostitbg{  /*background of blue postit*/
+  background-color: var(--color3);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 250px;
+  height: 100%;  
+  flex-wrap: wrap;
+  
+  
+}
+
+
+#postit{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+/*spiral page*/
+#spiral
+{
+  
+  background-color: var(--color4);
+  background-position: center;
+  background-size: cover;
+
+}
