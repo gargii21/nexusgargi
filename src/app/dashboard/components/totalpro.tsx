@@ -52,7 +52,12 @@ const TotalPro: React.FC<TotalProProps> = () => {
     const updateResponse= (event: { target: { value: SetStateAction<string>; }; }) => {
         setResponse(event.target.value);
     };
-   
+    const handleKeyPress = (event: { key: string; }) => {
+      if (event.key === 'Enter') {
+        if(response!=""){setIsNew(false);
+          setName(response);}
+        else alert("Project name cannot be empty")
+      }};
     // The component's render output
     return (
         <><div
@@ -65,7 +70,7 @@ const TotalPro: React.FC<TotalProProps> = () => {
           left:"35%",
         }}
       >
-        <p style={{
+        <div style={{
           fontWeight: 'bold', textAlign: 'center',
           zIndex: 4, position: 'absolute', top: '0px', left: '0px', height: "100%", width: '100%',
           backgroundColor: 'rgba(255, 0, 0, 0)',
@@ -73,18 +78,18 @@ const TotalPro: React.FC<TotalProProps> = () => {
                     fontWeight: 'bold', textAlign: 'center',
                     zIndex: 4, position: 'absolute', top: '0px', left: '0px', height: "100%", width: '100%',
                     backgroundColor: 'rgba(255, 0, 0, 0)',
-                }}><input value={response} onChange={updateResponse}placeholder="Type Project Name Here" /></div><button style={{position:"absolute",top:"24px"}}onClick={() => {if(response!=""){setIsNew(false);setName(response);}else alert("Project name cannot be empty")}}>Done</button></>)}
-        </p>
-        <p style={{
+                }}><input value={response} onKeyDown={handleKeyPress} onChange={updateResponse}placeholder="Type Project Name Here" /></div><button style={{position:"absolute",top:"24px"}}onClick={() => {if(response!=""){setIsNew(false);setName(response);}else alert("Project name cannot be empty")}}>Done</button></>)}
+        </div>
+        <div style={{
           backgroundColor: 'var(--color3)', color: 'rgba(255, 0, 0, 0)', height: "100%", zIndex: 2, position: 'absolute',
           top: '0px', width: '100%', filter: 'brightness(1.4)',
         }}> hi
-        </p>
-        <p style={{
+        </div>
+        <div style={{
           backgroundColor: 'var(--color3)', color: 'rgba(255, 0, 0, 0)', height: "100%", zIndex: 3, position: 'absolute',
           top: '0px', width: string1, filter: 'contrast(0.8)',mixBlendMode:'multiply'
         }}> hi
-        </p> </div></>
+        </div> </div></>
     );
 };
 

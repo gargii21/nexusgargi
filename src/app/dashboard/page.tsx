@@ -14,6 +14,7 @@ import { after } from "node:test";
 import CartDroppable2 from "./components/droppable2";
 import TotalPro from "./components/totalpro";
 import ColourPick from "./components/colorpick";
+import Link from "next/link";
 
 
 
@@ -22,8 +23,8 @@ import ColourPick from "./components/colorpick";
 export default function Home()
  {
   return (
-    <><></><Navbar />
-    <DialogProvider>
+    <><></>
+    <DialogProvider><Navbar/>
     <TotalPro />  <ColourPick/>
     <table className="heading">
       <tbody>
@@ -53,35 +54,46 @@ function Todorow() {
    const {taskList,progTasks} = useContext(DialogContext);
    
    const {addPrepItem,addDoneItem} = useContext(DialogContext);
-   const {preppedTask,doneTask} = useContext(DialogContext);
+   const {preppedTask,doneTask,dstring,dstring2} = useContext(DialogContext);
    const{afterDrag} = useContext(DialogContext);
    
    
   
-   const lengt = Math.max(taskList.tasks.length,preppedTask.length);
-   const leng = Math.max(doneTask.length,lengt);
+   const lengt2 = Math.max(taskList.tasks.length,preppedTask.length);
+   const leng = Math.max(doneTask.length,lengt2);
   const len=leng*81;
-   let string1;
-   string1=len.toString();
-   string1=string1+"px";
+  const lengt = Math.max(dstring2,Math.max(len,dstring));
+  let string1;
+  string1=lengt.toString();
+  string1=string1+"px";
 
    
 
  
   return(
     
-    <table className="content">
-<tbody>
-       <tr className="title2" style={{height:string1}}>
-       <DndContext onDragEnd={addPrepItem}> <td id="postit"><Notes/> </td>
-        <td><CartDroppable items={prepTasks}/> </td></DndContext>
-        <DndContext onDragEnd={addDoneItem}><td><PrepNotes/></td>
-        <td><CartDroppable2 items={progTasks}/> </td></DndContext>
-        <td><DoneNotes/></td>
-    
-        </tr> 
-        </tbody>
-    </table>
+    <div className="content">
+      <div className="title2" style={{ height: string1}}>
+  <DndContext onDragEnd={addPrepItem}><div className="title3">
+      <Notes /> </div>
+    <div  className="title3">
+      <CartDroppable items={prepTasks} />
+    </div>
+  </DndContext>
+  <DndContext onDragEnd={addDoneItem}>
+    <div  className="title3">
+      <PrepNotes />
+    </div>
+    <div  className="title3">
+      <CartDroppable2 items={progTasks} />
+    </div>
+  </DndContext>
+  <div  className="title3">
+    <DoneNotes />
+  </div>
+</div>
+
+    </div>
    
   ) ;
  
@@ -90,8 +102,10 @@ function Todorow() {
 function Navbar() {
   
   return(
-    <><></><div className="navbar">
-      <a href="#"><button className="nav">Home</button></a>
+    <><></><div className="navbar2">
+      <button className="nav"><Link href="/" target="_blank">
+        Home 
+      </Link></button>
       <a href="#"><button className="nav">Contact Us</button></a>
       
       <a href="#"><button className="nav">Tutorial</button></a>
@@ -198,3 +212,4 @@ function DoneNotes(){
 
 
 
+ 

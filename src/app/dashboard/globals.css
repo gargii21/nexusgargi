@@ -120,8 +120,13 @@
   background-color: var(--color2);
 }
 
+
+
+
+
+
 /* navbar */
-.navbar{
+.navbar2{
   display: flex;
   background-color: var(--color1);
   height: 50px;
@@ -183,7 +188,7 @@ a{
 
 .heading{  /*table of headings of columns*/
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .title1{  /*indivisual titles boxes*/
@@ -228,14 +233,14 @@ a{
   border-radius: 20px;
   display: flex;   
   
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   
 }
 
 
 
-.title2 td{  /* data in columns*/
+.title3{  /* data in columns*/
   height: 100px;
   width: 150px;
   margin: 50px;

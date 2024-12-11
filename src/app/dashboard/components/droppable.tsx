@@ -7,6 +7,7 @@ import { useContext} from 'react';
 import { useState } from "react";
 
 import spiral from './spiral.png';
+import { relative } from "path";
 
 interface ICartDroppable {
     items: string ;
@@ -56,8 +57,8 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
            setResponse("");
           
        setPrepList(false);
-      
-    
+
+     
       
         }};
         //convert to checkbox
@@ -85,6 +86,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
             setCheckingList({
                 tasks:nlist,
             });
+          
            }
         };
         
@@ -102,6 +104,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
             editTask({
                 tasks:[],
             })
+        
             setPrepTask("");
             setPrepList(!prepList);
             afterDrag();
@@ -111,6 +114,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
           );
           useEffect(()=>{
             console.log("tasklist"+taskList.tasks);
+            setDstring((taskList.tasks.length)*50+150);
           },[taskList.tasks]);
 
           const lremove = (taskname:string) =>{
@@ -123,9 +127,9 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
             editTask({
                 tasks:nlist,
             });
-
+          
             remove(taskname);
-           
+            
 
           };
 
@@ -138,15 +142,14 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
           string1=c.toString();
            string1=string1+"%";
 
-
-           const leng = taskList.tasks.length;
-           const len=leng*55;
+        const leng = taskList.tasks.length;
+        const len=leng*55;
         
-            let string2;
+       let string2;
             string2=len.toString();
             string2=string2+"px";
 
-           setDstring(len+150);
+          
            
        
 
@@ -165,7 +168,10 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
              
           }}
         >
-
+{!checkBox&&(<p style={{
+                        fontWeight: 'bold', textAlign: 'center',
+                        backgroundColor: 'rgba(255, 0, 0, 0)',position:'relative', top:'15%'
+                    }}>Drag Post-It here</p>)}
 {checkBox && (<><>
 
                     {/* progress bar of preparing */}

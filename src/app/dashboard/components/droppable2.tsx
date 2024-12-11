@@ -44,7 +44,7 @@ const CartDroppable2: FC<ICartDroppable2> = (props) => {
             editTask({
                 tasks: ntasks,
                });
-               
+              
        setResponse("");
        setPrepList(false);
       
@@ -86,12 +86,15 @@ const remove = (taskname:string) =>{
     editTask({
         tasks:nlist,
     });
-
+  
     remove(taskname);
    
 
   };
-
+  useEffect(()=>{
+    console.log("tasklist"+taskList.tasks);
+    setDstring2((taskList.tasks.length)*50+150);
+  },[taskList.tasks]);
    useEffect(() => {
   
     
@@ -101,6 +104,7 @@ const remove = (taskname:string) =>{
         editTask({
             tasks:[],
         })
+        
         setProgTasks("");
         setPrepList(!prepList);
         afterDrag2();
@@ -124,16 +128,10 @@ const remove = (taskname:string) =>{
    let string2;
    string2=len.toString();
    string2=string2+"px";
-   setDstring2(len+150);
+  
   
     return(
         <>
-        <div   style={{
-        
-             
-             backgroundImage: `url(${spiral.src})`,  
-             
-          }}></div>
         <div id="spiral" ref={setNodeRef}
         style={{
             width: '190px', // Increase the width of the droppable area
@@ -146,7 +144,10 @@ const remove = (taskname:string) =>{
              
           }}
         >
-
+{!checkBox2&&(<p style={{
+                        fontWeight: 'bold', textAlign: 'center',
+                        backgroundColor: 'rgba(255, 0, 0, 0)',position:'relative', top:'15%'
+                    }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drag Post-It here</p>)}
             <div id="spiral" style={{width:'190px',height:'300px',}}>
             
 
