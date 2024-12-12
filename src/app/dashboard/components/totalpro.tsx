@@ -63,31 +63,32 @@ const TotalPro: React.FC<TotalProProps> = () => {
         <><div
         style={{
           width: '30%', // Increase the width of the droppable area
-          height: '30px', // Increase the height of the droppable area
+          height: '35px', // Increase the height of the droppable area
+          
         
           position: 'relative',
-          top:"30px",
+          top:"50px",
           left:"35%",
         }}
       >
         <div style={{
           fontWeight: 'bold', textAlign: 'center',
           zIndex: 4, position: 'absolute', top: '0px', left: '0px', height: "100%", width: '100%',
-          backgroundColor: 'rgba(255, 0, 0, 0)',
+          backgroundColor: 'rgba(255, 0, 0, 0)', display:'flex', alignItems:'center', justifyContent:'center',fontSize:'20px',
         }}><button onClick={handleClick}>{name}</button>{isNew && (<><div style={{
                     fontWeight: 'bold', textAlign: 'center',
                     zIndex: 4, position: 'absolute', top: '0px', left: '0px', height: "100%", width: '100%',
-                    backgroundColor: 'rgba(255, 0, 0, 0)',
-                }}><input value={response} onKeyDown={handleKeyPress} onChange={updateResponse}placeholder="Type Project Name Here" /></div><button style={{position:"absolute",top:"24px"}}onClick={() => {if(response!=""){setIsNew(false);setName(response);}else alert("Project name cannot be empty")}}>Done</button></>)}
+                    backgroundColor: 'rgba(255, 0, 0, 0)', 
+                }}><input value={response} onKeyDown={handleKeyPress} onChange={updateResponse}placeholder="Type Project Name Here" style={{border:'2px #290309 solid', height:'35px',width:'100%', borderRadius:'10px', color:'#290309', paddingLeft:'10px', paddingBottom:'3px'}} /></div><button style={{position:"absolute",top:"35px",right:'5px', color:'#290309' }}onClick={() => {if(response!=""){setIsNew(false);setName(response);}else alert("Project name cannot be empty")}}>Done</button></>)}
         </div>
         <div style={{
           backgroundColor: 'var(--color3)', color: 'rgba(255, 0, 0, 0)', height: "100%", zIndex: 2, position: 'absolute',
-          top: '0px', width: '100%', filter: 'brightness(1.4)',
+          top: '0px', width: '100%', filter: 'brightness(1.4)',borderRadius:'10px',
         }}> hi
         </div>
         <div style={{
           backgroundColor: 'var(--color3)', color: 'rgba(255, 0, 0, 0)', height: "100%", zIndex: 3, position: 'absolute',
-          top: '0px', width: string1, filter: 'contrast(0.8)',mixBlendMode:'multiply'
+          top: '0px', width: string1, filter: 'contrast(0.8)',mixBlendMode:'multiply',borderRadius:'10px',
         }}> hi
         </div> </div></>
     );

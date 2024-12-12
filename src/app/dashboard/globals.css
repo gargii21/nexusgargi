@@ -72,7 +72,7 @@
 .eleme {
  
   z-index: 1000; /* adjust the z-index to a higher value if needed */
-  background-color: var(--color2);
+  background-color: 'var(--color2)';
   width: 100%;
   height: 100%;
   padding: 5px 5px 5px 5px;
@@ -81,7 +81,7 @@
   
   
   text-align: top;
-  color: var(--color1);
+  color: #290309;
   font-size: 20px;
   font-weight: 450;
   
@@ -135,11 +135,11 @@
 }
 
 .nav{
-  margin-left: 30px;
+  margin-left: 20px;
   
   height: 40px;
   color: #F9D2AF;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
 
 
@@ -208,6 +208,7 @@ a{
   justify-content: center;
   color: var(--color2);
   font-size: 20px;
+  border-radius: 10px;
 }
 
 
