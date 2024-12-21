@@ -114,7 +114,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
           );
           useEffect(()=>{
             console.log("tasklist"+taskList.tasks);
-            setDstring((taskList.tasks.length)*50+150);
+            setDstring((taskList.tasks.length)*53+150);
           },[taskList.tasks]);
 
           const lremove = (taskname:string) =>{
@@ -161,7 +161,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
             width: '190px', // Increase the width of the droppable area
             height: '300px', // Increase the height of the droppable area
              position: 'absolute',
-             top:'260px',
+             top:'275px',
              marginRight:'22px',
              
              backgroundImage: checkBox?`url(${spiral.src})`:``,
@@ -170,7 +170,7 @@ const CartDroppable: FC<ICartDroppable> = (props) => {
         >
 {!checkBox&&(<p style={{
                         fontWeight: 'bold', textAlign: 'center',
-                        backgroundColor: 'rgba(255, 0, 0, 0)',position:'relative', top:'15%'
+                        backgroundColor: 'rgba(255, 0, 0, 0)',position:'relative', top:'15%', color:'#290309'
                     }}>Drag Post-It here</p>)}
 {checkBox && (<><>
 

@@ -28,7 +28,7 @@ const ColourPick: React.FC<ColourPickProps> = () => {
        setModalOpen(true);
       }
       const handleClickgreen = () =>{
-        document.documentElement.style.setProperty('--color3', '#32a852' );
+        document.documentElement.style.setProperty('--color3', '#28942f' );
         //document.documentElement.style.setProperty('--color3', '#f56942' );
        }
        const handleClickpurple = () =>{
@@ -38,8 +38,8 @@ const ColourPick: React.FC<ColourPickProps> = () => {
       const handleClickblue = () =>{
         document.documentElement.style.setProperty('--color3', '#418bc3' );
        }
-          const handleClickred = () =>{
-        document.documentElement.style.setProperty('--color3', '#f56942' );
+          const handleClickorange = () =>{
+        document.documentElement.style.setProperty('--color3', '#bf852c' );
        }
        const handleClickpink = () =>{
         document.documentElement.style.setProperty('--color3', '#f16192' );
@@ -47,12 +47,12 @@ const ColourPick: React.FC<ColourPickProps> = () => {
       
         const handleClicklavender = () =>{
             document.documentElement.style.setProperty('--color3', '#a358d3' );}
-            const handleClickteal = () =>{
+            const handleClickred = () =>{
                 
-                document.documentElement.style.setProperty('--color3', '#66b2b2' );
+                document.documentElement.style.setProperty('--color3', '#b8181d' );
                 }
-       const handleClickyellow = () =>{
-        document.documentElement.style.setProperty('--color3', '#e9b14d' );
+       const handleClickdarkblue = () =>{
+        document.documentElement.style.setProperty('--color3', '#636cc7' );
        }
       
       const closePicker = () =>{
@@ -63,16 +63,16 @@ const ColourPick: React.FC<ColourPickProps> = () => {
    
     // The component's render output
     return (
-        <><button style={{color: 'var(--color2)', backgroundColor: 'var(--color1)',marginLeft:'15px',height:'45px',width:'90px'}}onClick={handleClick3}>Themes
+        <><button style={{color: 'var(--color2)', backgroundColor: 'var(--color1)',marginLeft:'1010px',marginTop:'15px', height:'35px',width:'90px', textAlign:'center', borderRadius:'10px'}}onClick={handleClick3}>Themes
         </button>
-        {modalOpen && (<div className='dialog-box2'><center>Select Colour</center>
+        {modalOpen && (<div className='dialog-box2' style={{height:'335px'}}><center style={{fontSize:'20px', color:'#290309'}}><b>Select Colour</b></center>
         <div className="grid-container">
         <button onClick={handleClickpurple} className="grid-item"style={{border:"3px solid black",backgroundColor:'#a8329e',
          
         }}></button>
        
-         <button onClick={handleClickred} className="grid-item"style={{border:"3px solid black",
-         backgroundColor:'#f56942'
+         <button onClick={handleClickorange} className="grid-item"style={{border:"3px solid black",
+         backgroundColor:'#bf852c'
           
         }}></button>
         <button onClick={handleClickblue} className="grid-item"style={{border:"3px solid black",
@@ -80,8 +80,8 @@ const ColourPick: React.FC<ColourPickProps> = () => {
           
         }}></button>
        
-       <button onClick={handleClickyellow} className="grid-item"style={{border:"3px solid black",
-         backgroundColor:'#f5bf42'
+       <button onClick={handleClickdarkblue} className="grid-item"style={{border:"3px solid black",
+         backgroundColor:'#636cc7'
           
         }}></button>
         <button onClick={handleClicklavender} className="grid-item"style={{border:"3px solid black",
@@ -94,15 +94,15 @@ const ColourPick: React.FC<ColourPickProps> = () => {
         }}></button>
         
         <button onClick={handleClickgreen} className="grid-item"style={{border:"3px solid black",
-         backgroundColor:'#32a852'
+         backgroundColor:'#28942f'
           
         }}></button>
-        <button onClick={handleClickteal} className="grid-item"style={{border:"3px solid black",
-         backgroundColor:'#66b2b2'
+        <button onClick={handleClickred} className="grid-item"style={{border:"3px solid black",
+         backgroundColor:'#b8181d'
           
         }}></button>
     </div>
-    <button style={{color:'white'}} onClick={closePicker}>Close</button>
+    <button style={{color:'#F9D2AF', marginTop:'10px',fontSize:'17px', }} onClick={closePicker}>Close</button>
     </div>)}</>
     );
 };

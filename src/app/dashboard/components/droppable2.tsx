@@ -93,7 +93,7 @@ const remove = (taskname:string) =>{
   };
   useEffect(()=>{
     console.log("tasklist"+taskList.tasks);
-    setDstring2((taskList.tasks.length)*50+150);
+    setDstring2((taskList.tasks.length)*53+150);
   },[taskList.tasks]);
    useEffect(() => {
   
@@ -137,7 +137,7 @@ const remove = (taskname:string) =>{
             width: '190px', // Increase the width of the droppable area
             height: '300px', // Increase the height of the droppable area
              position: 'absolute',
-             top:'260px',
+             top:'275px',
              marginRight:'22px',
              
              backgroundImage: checkBox2?`url(${spiral.src})`:``,  
@@ -145,8 +145,8 @@ const remove = (taskname:string) =>{
           }}
         >
 {!checkBox2&&(<p style={{
-                        fontWeight: 'bold', textAlign: 'center',
-                        backgroundColor: 'rgba(255, 0, 0, 0)',position:'relative', top:'15%'
+                         textAlign: 'center',
+                        backgroundColor: 'rgba(255, 255, 255, 0)',position:'relative', top:'15%', fontSize:'15px',fontWeight:'bold',color:'#290309'
                     }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drag Post-It here</p>)}
             <div id="spiral" style={{width:'190px',height:'300px',}}>
             

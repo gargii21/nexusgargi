@@ -42,28 +42,31 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body> {showNavbar && (
-        <nav className="sticky h-14  insert-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
+        <nav className="sticky h-14  insert-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/0 backdrop-blur-lg transition-all ">
             <MaxWidthWrapper>
                 <div className="flex h-14 items-center justify-between border-zinc-200">
                     <Link href='/' className=" flex z-40 font-bold'">
-                      <span>KB</span>
+                      <span style={{fontSize:'30px',textAlign:'center', display:'flex', alignItems:'center'}}>KB</span>
+                      <span style={{marginLeft:'20px', width:'82px', textAlign:'center', display:'flex', alignItems:'center'}}>Contact Us</span>
+                      <span style={{marginLeft:'10px', width:'60px', textAlign:'center', display:'flex', alignItems:'center'}}>Tutorial</span>
+                      <span style={{marginLeft:'15px', width:'60px', textAlign:'center', display:'flex', alignItems:'center' }}>Reviews</span>
                     </Link>
 
-                    <div className="hidden items-center space-x-4 sm:flex">
+                    <div className="hidden items-center space-x-4 sm:flex" style={{marginLeft:'700px',}}>
                       <>
                        <Link href='/' className={buttonVariants({
-                        variant:'ghost',
+                        
                         size:'sm'
                        })}>Sign in </Link>
 
                        <Link href='/' className={buttonVariants({
-                        variant:'ghost',
+                        
                         size:'sm'
-                       })}>Log in </Link>
+                       })} >Log in </Link>
 
-                       <Link href='/dashboard' className={buttonVariants({
+                       {/* <Link href='/dashboard' target="_blank" className={buttonVariants({
                         size:'sm'
-                       })}>Get Started </Link>
+                       })}>Get Started </Link> */}
                        
 
                       </>

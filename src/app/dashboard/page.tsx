@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import blue from './blue.png';
+import line from './lineart.png';
 	import { url } from "inspector";
 import { SetStateAction,useState,useEffect } from "react";
 import { DialogProvider, DialogContext } from './context/Context';
@@ -103,13 +104,15 @@ function Navbar() {
   
   return(
     <><></><div className="navbar2">
+      <a href="#"><button className="nav" style={{width:'30px', fontSize:'30px', display:'flex', alignItems:'center', textDecoration:'none', marginLeft:'20px'}}>KB</button></a>
       <button className="nav"><Link href="/" target="_blank">
         Home 
       </Link></button>
-      <a href="#"><button className="nav">Contact Us</button></a>
+      <a href="#"><button className="nav" style={{width:'75px'}}>Contact Us</button></a>
       
       <a href="#"><button className="nav">Tutorial</button></a>
-      <a href="#"><button className="nav" id="logout">Logout</button></a>
+      <a href="#"><button className="nav">Reviews</button></a>
+      <a href="#"><button className="nav" id="logout" style={{marginLeft:'1100px'}}>Logout</button></a>
     </div><></></>
    
   ) ;
