@@ -70,7 +70,7 @@ export default function Home() {
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-500/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4 ">
                     <Image 
-                    src='/mainkbpage.png'
+                    src='/kbFigma.jpg'
                     alt= 'product preview'
                     width={1920}
                     height={960}
@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-500/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4 ">
                     <Image 
-                    src='/kb1.png'
+                    src='/todobest.png'
                     alt= 'product preview'
                     width={1920}
                     height={494}
@@ -157,16 +157,16 @@ export default function Home() {
                     className="absolute bottom-0 right-10 aspect-[1155/678] w-[30rem] rotate-[45deg] bg-gradient-to-bl from-[#ffaf80] to-[#ffc84d] opacity-30 sm:w-[50rem]"/> */}
 
 <MaxWidthWrapper>
-<div className="relative w-full mx-auto pt-8 pb-8 shadow-md mt-40 mb-4 overflow-hidden rounded-lg h-[500px]">
+<div className="relative w-full mx-auto pt-8 pb-8 shadow-md mt-40 mb-4 overflow-hidden rounded-lg h-[400px]">
   <iframe
     loading="lazy"
     className="absolute w-full h-full top-0 left-0 border-none mx-auto"
-    src="https://www.canva.com/design/DAGZ8vLgdpw/lEye3JL90r1PeosKsTcw0g/view?embed"
+    src="https://www.canva.com/design/DAGaFG1-ZOA/v4d25ZLpiIADaTALMvn6SQ/watch?embed"
     allow="fullscreen"
   ></iframe>
 </div>
 <a
-  href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGZ8vLgdpw&#x2F;lEye3JL90r1PeosKsTcw0g&#x2F;view?utm_content=DAGZ8vLgdpw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+  href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGaFG1-ZOA&#x2F;v4d25ZLpiIADaTALMvn6SQ&#x2F;watch?utm_content=DAGaFG1-ZOA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
   target="_blank"
   rel="noopener"
 ></a>
