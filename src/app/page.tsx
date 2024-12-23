@@ -70,10 +70,10 @@ export default function Home() {
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-500/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4 ">
                     <Image 
-                    src='/kbFigma.jpg'
+                    src='/mainkbpage.png'
                     alt= 'product preview'
-                    width={833}
-                    height={993}
+                    width={1920}
+                    height={960}
                     quality={100}
                     className="rounded-md bg-white p-2 shadow-2xl ring-1 ring-yellow-400/10"
                     />
@@ -91,10 +91,10 @@ export default function Home() {
       </div>
 
       {/*why*/}
-      <div className="mx-auto mt-10 mb-10 max-w-5xl sm:mt-56">
+      <div className="mx-auto mt-1 mb-10 max-w-5xl sm:mt-56">
         <div className="mb-12 px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="mt-2 text-2xl font-bold text-black sm:text-5xl">From <span className="text-red-400">To-Do</span> to <span className="text-green-400">Done</span>, Effortlessly</h2>
+            <h2 className="mt-0 text-2xl font-bold text-black sm:text-5xl">From <span className="text-red-400">To-Do</span> to <span className="text-green-400">Done</span>, Effortlessly</h2>
             <p className="mt-4 text-gray-900 text-lg">
               Managing your tasks has never been easier than with KB!!
             </p>
@@ -135,11 +135,11 @@ export default function Home() {
         </ol>
         {/*todo image*/}
         <div>
-              <div className="mx-auto max-w-4xl px-6 lg:px-8">
+              <div className="mx-auto max-w-4xl px-6 lg:px-8 pb-50">
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-500/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4 ">
                     <Image 
-                    src='/todo.png'
+                    src='/kb1.png'
                     alt= 'product preview'
                     width={1920}
                     height={494}
@@ -152,21 +152,27 @@ export default function Home() {
             </div>
 
           
-            {/*<div aria-hidden="true" className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform overflow-hidden blur-3xl sm:-top-80">
-            <div
-              style={{
-              clipPath: "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }} className="fixed bottom-0 left-0 aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-bl from-[#ff80b5] to-[#ebf24d] opacity-40 sm:w-[72.1875rem]"/>
-            </div>*/}
+            {/* <div style={{
+                    clipPath: "polygon(30% 40%, 70% 30%, 90% 50%, 80% 80%, 40% 90%, 20% 70%, 30% 40%)",}}
+                    className="absolute bottom-0 right-10 aspect-[1155/678] w-[30rem] rotate-[45deg] bg-gradient-to-bl from-[#ffaf80] to-[#ffc84d] opacity-30 sm:w-[50rem]"/> */}
 
-<div className="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" className="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGWhVHfWNY/MhpIuzZpq1QF_bDPC9pL_A/view?embed"  allow="fullscreen">
-  </iframe>
+<MaxWidthWrapper>
+<div className="relative w-full mx-auto pt-8 pb-8 shadow-md mt-40 mb-4 overflow-hidden rounded-lg h-[500px]">
+  <iframe
+    loading="lazy"
+    className="absolute w-full h-full top-0 left-0 border-none mx-auto"
+    src="https://www.canva.com/design/DAGZ8vLgdpw/lEye3JL90r1PeosKsTcw0g/view?embed"
+    allow="fullscreen"
+  ></iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGWhVHfWNY&#x2F;MhpIuzZpq1QF_bDPC9pL_A&#x2F;view?utm_content=DAGWhVHfWNY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Gargi
+<a
+  href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGZ8vLgdpw&#x2F;lEye3JL90r1PeosKsTcw0g&#x2F;view?utm_content=DAGZ8vLgdpw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+  target="_blank"
+  rel="noopener"
+></a>
+
+
+</MaxWidthWrapper>
             
 
 

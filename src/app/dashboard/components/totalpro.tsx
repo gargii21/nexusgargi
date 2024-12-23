@@ -22,7 +22,7 @@ const TotalPro: React.FC<TotalProProps> = () => {
     string1=progress.toString();
      string1=string1+"%";
   // State which stores project name
-  const [name,setName]=useState("Nexus");
+  const [name,setName]=useState("Click to Enter Project Name");
    //bool to show input box
    const[isNew,setIsNew]=useState(false);
    const [response, setResponse] = useState("");

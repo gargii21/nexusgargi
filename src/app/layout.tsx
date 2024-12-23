@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en" >
       <body> {showNavbar && (
         <nav className="sticky h-14  insert-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/0 backdrop-blur-lg transition-all ">
-            <MaxWidthWrapper>
+            {/* <MaxWidthWrapper> */}
                 <div className="flex h-14 items-center justify-between border-zinc-200">
                     <Link href='/' className=" flex z-40 font-bold'">
                       <span style={{fontSize:'30px',textAlign:'center', display:'flex', alignItems:'center'}}>KB</span>
@@ -73,7 +73,7 @@ export default function RootLayout({
 
                     </div>
                 </div>
-            </MaxWidthWrapper>
+            {/* </MaxWidthWrapper> */}
         </nav> )}
         {/*<div aria-hidden="true" className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform overflow-hidden blur-3xl sm:-top-80">
             <div
